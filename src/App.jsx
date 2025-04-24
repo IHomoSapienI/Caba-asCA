@@ -42,7 +42,7 @@ function App() {
     
 
         <a
-          href="https://instagram.com/tucuenta"
+          href="https://www.instagram.com/cabanascaminoalagua?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           className="social-button instagram-button"
           target="_blank"
           rel="noopener noreferrer"
