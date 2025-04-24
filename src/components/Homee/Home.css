@@ -1,12 +1,12 @@
 /* Asegurar que las secciones ocupen todo el ancho */
 .home-container {
     width: 100%;
-    overflow-x: hidden; /* Prevenir scroll horizontal */
+    /* overflow-x: hidden;  */
   }
   
   .hero-section {
     height: 90vh;
-    width: 100vw; /* Usar viewport width */
+    width: 100vw; 
     margin-left: calc(-50vw + 50%); /* Centrar correctamente */
     margin-right: calc(-50vw + 50%);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
