@@ -1,6 +1,8 @@
 "use client"
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
+// ⬆️ cambia esto en lugar de BrowserRouter
+
 import { AnimatePresence } from "framer-motion"
 import Landing from "./components/Landin/Landing"
 import Home from "./components/Homee/Home"
@@ -13,17 +15,17 @@ import { FaTiktok } from "react-icons/fa"
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="app-container">
-        <Navbar />
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/mision-vision" element={<MisionVision />} />
-            <Route path="/landing" element={<Landing />} />
-          </Routes>
-        </AnimatePresence>
-        <Footer />
+    <HashRouter>
+  <div className="app-container">
+    <Navbar />
+    <AnimatePresence mode="wait">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mision-vision" element={<MisionVision />} />
+        <Route path="/landing" element={<Landing />} />
+      </Routes>
+    </AnimatePresence>
+    <Footer />
 
         Social media buttons
         <a
@@ -60,7 +62,7 @@ function App() {
           
         </a>
       </div>
-    </BrowserRouter>
+      </HashRouter>
   )
 }
 
